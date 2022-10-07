@@ -1,0 +1,19 @@
+services:
+
+  api:
+    image: dem-web-api-js/api
+    build: ./api
+    command: npm run supervisor
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/home/app/src
+
+  tests:
+    image: dem-web-api-js/tests
+    volumes:
+      - ./tests/formalspec:/formalspec
+    environment:
+      LOG_LEVEL: DEBUG
+      ROBUST: "no"
+      FAILFAST: "1"
