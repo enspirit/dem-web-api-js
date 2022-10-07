@@ -1,0 +1,29 @@
+---
+name: |-
+  Compile
+
+url: |-
+  /compile/
+
+services:
+- method: |-
+    POST
+
+  description: |-
+    Allows compiling some text, template, style and data.
+
+  input_schema: |-
+    .
+  output_schema: |-
+    .
+
+  error_schema: |-
+    Error
+
+  examples:
+
+    - description: |-
+        when requested, it works
+      expected:
+        content_type: ~
+        status: 200
