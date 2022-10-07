@@ -1,0 +1,38 @@
+{
+  "name": "dem-web-api-js",
+  "version": "0.0.1",
+  "description": "Web API for doc-e-mate",
+  "main": "bin/api",
+  "homepage": "https://github.com/enspirit/dem-web-api-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enspirit/dem-web-api-js.git"
+  },
+  "author": "ygu",
+  "license": "ISC",
+  "keywords": [
+    "markdown",
+    "mustache",
+    "doc-e-mate",
+    "api"
+  ],
+  "scripts": {
+    "supervisor": "supervisor ./bin/api"
+  },
+  "dependencies": {
+    "@enspirit/dem-core-rescript": "^1.0.1",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "supervisor": "^0.12.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
