@@ -7,7 +7,7 @@ services:
     ports:
       - 3000:3000
     volumes:
-      - ./src:/home/app/src
+      - ./api/src:/home/app/src
 
   tests:
     image: dem-web-api-js/tests
